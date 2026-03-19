@@ -1,0 +1,12 @@
+.DS_Store
+__MACOSX/
+__pycache__/
+*.py[cod]
+
+# Root experiment outputs from the existing motif repo
+output/
+
+# Imported fig_motif_zj project: keep source/docs, ignore heavy data and generated artifacts
+fig_motif_zj/.git/
+fig_motif_zj/projects/*/data/
+fig_motif_zj/projects/*/outputs/
