@@ -1,8 +1,10 @@
-.DS_Store
-__MACOSX/
 __pycache__/
 *.py[cod]
-output/
-projects/*/data/raw/
-projects/*/data/processed/
-projects/*/outputs/
+*.so
+.DS_Store
+.ipynb_checkpoints/
+
+fig2/wb_alltype_sc_results_dict_with_NZ_ES_norm.pkl
+fig2/results/*.ipynb
+fig5/results/*.ipynb
+

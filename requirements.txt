@@ -1,10 +1,11 @@
+adjustText
+gym
+jupyter
+matplotlib
+nbconvert
+nbformat
 numpy
 pandas
-matplotlib
-seaborn
 scipy
-networkx
 torch
-gym
-tqdm
-openpyxl
+umap-learn

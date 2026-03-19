@@ -1,0 +1,69 @@
+{
+  "smooth_window": 5,
+  "environments": {
+    "ip": {
+      "ann": {
+        "FRP": 10,
+        "AVE": 10,
+        "MOP": 10,
+        "MOP-E": 10,
+        "Vanilla": 10
+      },
+      "snn": {
+        "FRP": 10,
+        "AVE": 10,
+        "MOP": 10,
+        "MOP-E": 10,
+        "Vanilla": 10
+      }
+    },
+    "idp": {
+      "ann": {
+        "FRP": 10,
+        "AVE": 10,
+        "MOP": 10,
+        "MOP-E": 9,
+        "Vanilla": 9
+      },
+      "snn": {
+        "FRP": 10,
+        "AVE": 10,
+        "MOP": 10,
+        "MOP-E": 9,
+        "Vanilla": 9
+      }
+    },
+    "walker": {
+      "ann": {
+        "FRP": 10,
+        "AVE": 10,
+        "MOP": 10,
+        "MOP-E": 10,
+        "Vanilla": 10
+      },
+      "snn": {
+        "FRP": 10,
+        "AVE": 10,
+        "MOP": 10,
+        "MOP-E": 10,
+        "Vanilla": 10
+      }
+    },
+    "ant": {
+      "ann": {
+        "FRP": 10,
+        "AVE": 10,
+        "MOP": 10,
+        "MOP-E": 9,
+        "Vanilla": 9
+      },
+      "snn": {
+        "FRP": 10,
+        "AVE": 10,
+        "MOP": 10,
+        "MOP-E": 9,
+        "Vanilla": 9
+      }
+    }
+  }
+}

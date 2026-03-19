@@ -1,49 +1,30 @@
-# Incorporation of Single-Neuron Projectome-Based Connectivity Motifs Enhances the Performance of Artificial Neural Networks
+# Incorporation of single-neuron projectome-based connectivity motifs enhances the performance of artificial neural networks
 
-This repository is organized as a paper-oriented code release. Each top-level figure folder contains the current runnable entry files for that figure, while shared projectome utilities live under `projects/`.
+This repository is organized around the paper figures and a reusable `CINA` code package.
 
 ## Repository layout
 
-- `figure_01_connectivity_matrix/`
-  Minimal geometry-based connectivity strength code for the connectivity-matrix analysis.
-- `figure_02_brain_clustering_heatmap/`
-  Core motif counting, motif frequency, and motif Z-score code for adjacency matrices, plus a one-click demo runner and generated result.
-- `figure_03_reinforcement_learning/`
-  Motif-regularized recurrent PPO training code. This is the current Figure 3 code path and remains incomplete, but it is the active training implementation.
-- `figure_04_projectome_motifs/`
-  Exported projectome-analysis scripts for the current multiregion, clone, and heatmap figure workflows, plus a stable one-click demo runner and generated result.
-- `figure_05_small_world/`
-  Core graph-metric and small-world analysis code, plus a one-click demo runner and generated result.
-- `supplementary_figures/`
-  Exported scripts for supplementary figure workflows.
-- `projects/`
-  Shared projectome utilities plus lightweight processing and plotting helpers for the clone and multiregion datasets.
+- `fig2/`: one-click notebook pipeline, exported result figures, and figure-specific notes for the Fig. 2 regional clustering and motif analysis.
+- `fig4/`: one-click plotting entry point, bundled result arrays, and exported figures for the ANN/SNN experiment suite used in Fig. 4.
+- `fig5/`: one-click notebook pipeline, bundled JSONL input data, and exported figure assets for the small-world analysis in Fig. 5.
+- `CINA/`: reusable core code collected from the paper workflow, including the original motif-regularized reinforcement-learning module.
 
 ## Quick start
 
-Install the common Python dependencies:
-
 ```bash
-pip install -r requirements.txt
+cd fig2
+python run_fig2.py --data-path /path/to/wb_alltype_sc_results_dict_with_NZ_ES_norm.pkl
 ```
 
-Run the figure-specific entry points from the repository root:
-
 ```bash
-python figure_01_connectivity_matrix/fig1_core_connectivity.py
-python figure_02_brain_clustering_heatmap/run_figure_2.py
-python figure_03_reinforcement_learning/main.py --env ip --seed 1 --prefix Vanilla --cuda 0 --fre -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-python figure_04_projectome_motifs/run_figure_4.py
-python figure_05_small_world/run_figure_5.py
+cd fig4
+python run_fig4.py
 ```
 
-The Figure 2, Figure 4, and Figure 5 folders already include generated outputs under their local `results/` directories.
+```bash
+cd fig5
+python run_fig5.py
+```
 
-## Data note
+Fig. 2 depends on a large pickle file that is not versioned in Git because it exceeds the regular GitHub file size limits. The generated Fig. 2 result SVGs are included in `fig2/results/`.
 
-Large raw datasets and generated figure outputs are not stored in this GitHub repository. The projectome scripts expect data under:
-
-- `projects/clone_motif/data/raw/`
-- `projects/our_multiregion_motif/data/raw/`
-
-The reinforcement-learning code writes outputs under `figure_03_reinforcement_learning/output/`.

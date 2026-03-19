@@ -1,0 +1,759 @@
+{
+  "project_root": "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite",
+  "repo_root": "/home/zhengtianyu/yaowangzi/rl_v4",
+  "environments": {
+    "ip": {
+      "source_dir": "/home/zhengtianyu/yaowangzi/rl_v4/output/ip",
+      "local_dir": "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/raw/ip",
+      "ann": {
+        "MOP": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        },
+        "MOP_E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        },
+        "ORBI": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        },
+        "ORBI_E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        },
+        "Vanilla": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        }
+      },
+      "snn": {
+        "MOP": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        },
+        "MOP_E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        },
+        "ORBI": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        },
+        "ORBI_E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        },
+        "Vanilla": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            300
+          ]
+        }
+      }
+    },
+    "idp": {
+      "source_dir": "/home/zhengtianyu/yaowangzi/rl_v4/output/idp",
+      "local_dir": "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/raw/idp",
+      "ann": {
+        "MOP": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            2000
+          ]
+        },
+        "MOP_E": {
+          "file_count": 9,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lengths": [
+            2000
+          ]
+        },
+        "ORBI": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            2000
+          ]
+        },
+        "ORBI_E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            2000
+          ]
+        },
+        "Vanilla": {
+          "file_count": 9,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lengths": [
+            2000
+          ]
+        }
+      },
+      "snn": {
+        "MOP": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            2000
+          ]
+        },
+        "MOP_E": {
+          "file_count": 9,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lengths": [
+            2000
+          ]
+        },
+        "ORBI": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            2000
+          ]
+        },
+        "ORBI_E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            2000
+          ]
+        },
+        "Vanilla": {
+          "file_count": 9,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lengths": [
+            2000
+          ]
+        }
+      }
+    },
+    "walker": {
+      "source_dir": "/home/zhengtianyu/yaowangzi/rl_v4/output/walker",
+      "local_dir": "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/raw/walker",
+      "ann": {
+        "12E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        },
+        "12": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        },
+        "2E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        },
+        "2": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        },
+        "Vanilla": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        }
+      },
+      "snn": {
+        "12E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        },
+        "12": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        },
+        "2E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        },
+        "2": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        },
+        "Vanilla": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            8000
+          ]
+        }
+      }
+    },
+    "ant": {
+      "source_dir": "/home/zhengtianyu/yaowangzi/rl_v4/output/ant",
+      "local_dir": "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/raw/ant",
+      "ann": {
+        "12E": {
+          "file_count": 9,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lengths": [
+            3000
+          ]
+        },
+        "12": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            3000
+          ]
+        },
+        "2E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            3000
+          ]
+        },
+        "2": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            3000
+          ]
+        },
+        "Vanilla": {
+          "file_count": 9,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lengths": [
+            3000
+          ]
+        }
+      },
+      "snn": {
+        "12E": {
+          "file_count": 9,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lengths": [
+            3000
+          ]
+        },
+        "12": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            3000
+          ]
+        },
+        "2E": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            3000
+          ]
+        },
+        "2": {
+          "file_count": 10,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lengths": [
+            3000
+          ]
+        },
+        "Vanilla": {
+          "file_count": 9,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lengths": [
+            3000
+          ]
+        }
+      }
+    }
+  },
+  "reference_figures": [
+    "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/reference_figures/ip.svg",
+    "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/reference_figures/ip_discrete.svg",
+    "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/reference_figures/idp_discrete.svg",
+    "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/reference_figures/walker.svg",
+    "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/reference_figures/walker_SNN.svg",
+    "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/reference_figures/ant.svg",
+    "/home/zhengtianyu/yaowangzi/rl_v4/ann_snn_exp_suite/artifacts/results/reference_figures/ant_discrete.svg"
+  ]
+}
