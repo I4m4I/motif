@@ -8,7 +8,7 @@ import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 
 
-NOTEBOOK_NAME = "fig5.ipynb"
+NOTEBOOK_NAME = "fig6.ipynb"
 DATA_FILE_NAME = "swER_all.jsonl"
 
 
@@ -39,7 +39,7 @@ def main() -> None:
     if not data_path.exists():
         raise FileNotFoundError(f"Missing required input file: {data_path}")
 
-    with tempfile.TemporaryDirectory(prefix="fig5_run_", dir=str(base_dir)) as tmp_dir_name:
+    with tempfile.TemporaryDirectory(prefix="fig6_run_", dir=str(base_dir)) as tmp_dir_name:
         tmp_dir = Path(tmp_dir_name)
         shutil.copy2(notebook_path, tmp_dir / NOTEBOOK_NAME)
         shutil.copy2(data_path, tmp_dir / DATA_FILE_NAME)
@@ -47,7 +47,7 @@ def main() -> None:
         exported_files = sync_results(tmp_dir, results_dir)
 
     if not exported_files:
-        raise RuntimeError("The Fig. 5 notebook finished without exporting any SVG files.")
+        raise RuntimeError("The Fig. 6 notebook finished without exporting any SVG files.")
 
     print(f"Exported {len(exported_files)} SVG files to {results_dir}")
 

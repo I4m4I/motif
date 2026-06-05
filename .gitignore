@@ -6,5 +6,5 @@ __pycache__/
 
 fig2/wb_alltype_sc_results_dict_with_NZ_ES_norm.pkl
 fig2/results/*.ipynb
-fig5/results/*.ipynb
+fig6/results/*.ipynb
 

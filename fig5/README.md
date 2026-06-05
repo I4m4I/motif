@@ -1,17 +1,38 @@
 # Fig. 5
 
-This folder contains the Fig. 5 notebook workflow, the bundled JSONL input file, a one-click runner, and the exported result figure.
+This folder collects the Fig. 5 experiments that embed biological motif priors
+into Mamba (Motif-Mamba) and evaluate them on language benchmarks and
+brain-signal decoding tasks. It is split into two self-contained subpackages
+matching the two halves of the figure.
 
-## Contents
+## Subpackages
 
-- `fig5.ipynb`: cleaned English notebook version for the small-world analysis.
-- `swER_all.jsonl`: local input data used by the notebook.
-- `run_fig5.py`: executes the notebook in a temporary working directory and copies exported SVG results into `results/`.
-- `results/fig_5def_smallworld.svg`: exported figure asset from the notebook.
+- `language_qa/` (panels a-d): natural-language question-and-answer evaluation of
+  vanilla Mamba-130M against the motif-constrained variants (`FRP-Motif`,
+  `MOP-Motif`, `Average-Motif`) on six downstream QA benchmarks. Includes the
+  lm-evaluation-harness wrapper, a one-click evaluation script, the bundled
+  per-model results JSON, and the exported radar/accuracy figures.
+- `bmi_decoding/` (panels e-j): the Mamba vs MotifMamba brain-machine-interface
+  decoding workflow for the center-out movement-direction classification task,
+  the mouse auditory two-alternative forced-choice task, and the mouse
+  fixed-interval lick/no-lick task. Includes training entrypoints, plotting
+  scripts, experiment parameter notes, and one-click runners.
 
-## Run
+## Quick start
+
+Language QA benchmarks (panels a-d):
 
 ```bash
-python run_fig5.py
+cd language_qa
+./run_eval_motifmamba130m.sh
 ```
 
+BMI decoding (panels e-j):
+
+```bash
+cd bmi_decoding
+./run_all.sh
+```
+
+See `language_qa/README.md` and `bmi_decoding/README.md` for the required model
+assets, data paths, and configuration switches.
