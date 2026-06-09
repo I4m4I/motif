@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motif"
+version = "0.1.0"
+description = "Projectome-based connectivity motifs for artificial neural networks: analysis, models, and experiments."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "torch",
+    "gym",
+    "einops",
+    "umap-learn",
+    "adjustText",
+    "nbformat",
+    "nbconvert",
+    "jupyter",
+    "tensorboard",
+]
+
+[project.urls]
+Repository = "https://github.com/I4m4I/motif"
+
+[tool.setuptools]
+# Reusable library packages. Experiment runners live in scripts/ and the vendored
+# Mamba source tree under models/mamba/ is installed separately.
+packages = ["connectivity", "models", "models.rl", "data", "training", "evaluation"]

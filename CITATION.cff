@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Incorporation of single-neuron projectome-based connectivity motifs enhances the performance of artificial neural networks"
+# TODO: replace the placeholder author entry below with the real author list.
+authors:
+  - family-names: "Author"
+    given-names: "First"
+repository-code: "https://github.com/I4m4I/motif"
+license: MIT
+date-released: "2026-01-01"

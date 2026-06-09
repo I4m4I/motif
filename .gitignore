@@ -4,7 +4,15 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 
-fig2/wb_alltype_sc_results_dict_with_NZ_ES_norm.pkl
-fig2/results/*.ipynb
-fig6/results/*.ipynb
+# Large connectivity input (exceeds GitHub file-size limit)
+data/**/wb_alltype_sc_results_dict_with_NZ_ES_norm.pkl
+wb_alltype_sc_results_dict_with_NZ_ES_norm.pkl
 
+# Notebook copies emitted into results by the one-click runners
+results/**/*.ipynb
+
+# Trained weights and raw training outputs
+models/checkpoints/*.pt
+models/checkpoints/*.pth
+results/bmi_decoding/runs/
+output/
